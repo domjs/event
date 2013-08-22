@@ -53,11 +53,28 @@ function Event (type) {
 }
 
 /**
+ * Initializes the `type`, `bubbles`, and `cancelable` args for this Event
+ * instance.
  *
+ * @api public
+ */
+
+function initEvent (type, bubbles, cancelable) {
+  this.type = String(type);
+  this.bubbles = Boolean(bubbles);
+  this.cancelable = Boolean(cancelable);
+}
+
+/**
+ * Cancels the event (if it is cancelable).
+ *
+ * @api public
  */
 
 function preventDefault () {
-  this.defaultPrevented = true;
+  if (this.cancelable) {
+    this.defaultPrevented = true;
+  }
 }
 
 /**
@@ -74,6 +91,7 @@ function stopImmediatePropagation () {
 function stopPropagation () {
 }
 
+Event.prototype.initEvent = initEvent;
 Event.prototype.preventDefault = preventDefault;
 Event.prototype.stopImmediatePropagation = stopImmediatePropagation;
 Event.prototype.stopPropagation = stopPropagation;
