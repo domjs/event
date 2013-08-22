@@ -37,8 +37,17 @@ function Event (type) {
 }
 
 /**
- * Initializes the `type`, `bubbles`, and `cancelable` args for this Event
- * instance.
+ * Expose constants.
+ */
+
+Event.NONE = Event.prototype.NONE = NONE;
+Event.CAPTURING_PHASE = Event.prototype.CAPTURING_PHASE = CAPTURING_PHASE;
+Event.AT_TARGET = Event.prototype.AT_TARGET = AT_TARGET;
+Event.BUBBLING_PHASE = Event.prototype.BUBBLING_PHASE = BUBBLING_PHASE;
+
+/**
+ * Initializes the `type`, `bubbles`, and `cancelable` properties
+ * for this Event instance.
  *
  * @api public
  */
