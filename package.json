@@ -1,0 +1,23 @@
+{
+  "name": "event",
+  "version": "0.0.0",
+  "description": "W3C-compliant implementation of the Event interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/domjs/event.git"
+  },
+  "keywords": [
+    "event",
+    "w3c",
+    "dom"
+  ],
+  "author": "Nathan Rajlich <nathan@tootallnate.net> (http://n8.io/)",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
