@@ -9,26 +9,10 @@ module.exports = Event;
  * Constants.
  */
 
-var AT_TARGET = 2;
-var BLUR = 8192;
-var BUBBLING_PHASE = 3;
-var CAPTURING_PHASE = 1;
-var CHANGE = 32768;
-var CLICK = 64;
-var DBLCLICK = 128;
-var DRAGDROP = 2048;
-var FOCUS = 4096;
-var KEYDOWN = 256;
-var KEYPRESS = 1024;
-var KEYUP = 512;
-var MOUSEDOWN = 1;
-var MOUSEDRAG = 32;
-var MOUSEMOVE = 16;
-var MOUSEOUT = 8;
-var MOUSEOVER = 4;
-var MOUSEUP = 2;
 var NONE = 0;
-var SELECT = 16384;
+var CAPTURING_PHASE = 1;
+var AT_TARGET = 2;
+var BUBBLING_PHASE = 3;
 
 /**
  * `Event` constructor.
