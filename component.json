@@ -1,0 +1,14 @@
+{
+  "name": "event",
+  "repo": "domjs/event",
+  "description": "W3C-compliant implementation of the Event interface",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
